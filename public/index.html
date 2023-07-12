@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- モバイルブラウザでのレイアウトを制御する。参考 https://qiita.com/ryounagaoka/items/045b2808a5ed43f96607 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <!-- 検索エンジンに引っかからないようにする。参考 https://ameblo.jp/masa30201/entry-11564231810.html -->
+  <meta name="Keywords" content="norobot">
+
+  <script src="/__/firebase/6.2.0/firebase-app.js"></script>
+  <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+  <script src="/__/firebase/6.2.0/firebase-storage.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+
+  <script src="src/main.js"></script>
+
+
+  <!-- android のブラウザを全画面表示にさせる -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- iOS のブラウザを全画面表示にさせる -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>log in</title>
+
+</head>
+
+<body>
+  <div class="main">
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Email" id="email" />
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input type="password" name="password" placeholder="password" id="password" />
+    </div>
+
+    <button class="submit-btn" onclick="register()">Sign Up</button>
+    <button class="login-btn" onclick="login()">Sign In</button>
+
+ <!--<button onclick="savaData()">Save Data</button>
+  <button onclick="readData()">Read Data</button>
+  <button onclick="updateData()">upDate one Field</button>-->
+  </div>
+
+</body>
+
+</html>

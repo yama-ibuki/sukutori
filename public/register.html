@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- モバイルブラウザでのレイアウトを制御する。参考 https://qiita.com/ryounagaoka/items/045b2808a5ed43f96607 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- 検索エンジンに引っかからないようにする。参考 https://ameblo.jp/masa30201/entry-11564231810.html -->
+    <meta name="Keywords" content="norobot">
+
+    <!-- update the version number as needed -->
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/6.2.0/firebase-app.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-messaging.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+
+
+    <script src="src/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+
+    <!-- android のブラウザを全画面表示にさせる -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS のブラウザを全画面表示にさせる -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Register</title>
+
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <label for="subject">科目名:</label>
+        <input type="text" id="subject" placeholder="科目名" required>
+    </div>
+    <div>
+        <label for="textbook">教科書名:</label>
+        <input type="text" id="textbook" placeholder="教科書名" required>
+    </div>
+
+    <label for="textbookImage">教科書の写真:</label>
+    <input type="file" id="textbookImage"  accept=".png,.jpeg,.jpg" required>
+    <br>
+    <button onclick="book_register()">登録</button>
+    <br>
+    <a href="search.html" class="button">探す</a>
+    <button onclick="logout()">ログアウト</button>
+    
+      
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- モバイルブラウザでのレイアウトを制御する。参考 https://qiita.com/ryounagaoka/items/045b2808a5ed43f96607 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- 検索エンジンに引っかからないようにする。参考 https://ameblo.jp/masa30201/entry-11564231810.html -->
+    <meta name="Keywords" content="norobot">
+
+    <script src="/__/firebase/6.2.0/firebase-app.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-messaging.js"></script>
+    <script src="/__/firebase/6.2.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+
+    <!-- android のブラウザを全画面表示にさせる -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS のブラウザを全画面表示にさせる -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        .button {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="register.html" class="button">登録</a>
+    <a href="search.html" class="button">探す</a>
+</body>
+
+</html>
